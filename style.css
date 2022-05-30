@@ -1,4 +1,4 @@
-/* Basic Style */
+/* Zeroing------------------------ */
 ul {
   margin: 0;
   padding: 0px;
@@ -11,22 +11,23 @@ input,
 button {
   outline: none;
 }
-button {
+body {
+  background-color: #f8f8f8;
+  color: #333;
+  font-family: Lato, sans-serif;
+}
+/* Basic styles--------------- */
+
+.btn {
   background: none;
   border: 0px;
   color: #888;
   font-size: 15px;
   width: 60px;
-  font-family: Lato, sans-serif;
   cursor: pointer;
 }
-button:hover {
+.btn:hover {
   color: #3a3a3a;
-}
-body {
-  background-color: #f8f8f8;
-  color: #333;
-  font-family: Lato, sans-serif;
 }
 
 /* Head-------------------------------------------------------------------------------- */
@@ -55,7 +56,7 @@ body {
   margin: 0 auto 0;
 }
 .task__text,
-.task-input,
+.task__input,
 .new-task__input {
   width: 56%;
   display: inline-block;
@@ -72,7 +73,7 @@ body {
   margin: 0;
   text-transform: uppercase;
 }
-.task-input,
+.task__input,
 .new-task__input {
   margin: 0;
   font-size: 18px;
@@ -85,7 +86,7 @@ body {
   font-family: Lato, sans-serif;
   color: #888;
 }
-.task-input:focus,
+.task__input:focus,
 .new-task__input:focus {
   color: #333;
 }
@@ -115,7 +116,7 @@ body {
   vertical-align: middle;
 }
 
-.checkbox-input {
+.task__checkbox {
   margin: 0 10px;
 }
 .task__text {
@@ -124,7 +125,7 @@ body {
   font-size: 18px;
   width: 226px;
 }
-.task-input {
+.task__input {
   width: 226px;
 }
 .delete-btn__icon {
@@ -143,15 +144,15 @@ body {
 }
 
 /* Edit Task */
-.task-input {
+.task__input {
   display: none;
 }
 
-.edit-mode .task-input {
+.task_edit-mode .task__input {
   display: inline-block;
   width: 224px;
 }
 
-.edit-mode .task__text {
+.task_edit-mode .task__text {
   display: none;
 }
