@@ -12,14 +12,14 @@ button {
   outline: none;
   font-family: inherit;
 }
-body {
+
+/* Basic styles--------------- */
+
+.page {
   background-color: #f8f8f8;
   color: #333;
   font-family: Lato, sans-serif;
 }
-
-/* Basic styles--------------- */
-
 .btn {
   background: none;
   border: 0px;
